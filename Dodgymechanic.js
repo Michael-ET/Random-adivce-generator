@@ -1,6 +1,6 @@
 const intro =['what you need, right, is to ', 'see, Here’s your problem, you need to ', 'My sister’s cousin said to ', 'The boss say’s ', 'Never listen to the manual, if you’ve got a problem just '];
 const middle = ['stick a spanner in it', 'grease up the whirly bits','divert power to the warp core', 'take the plug out and put it back in again', 'replace the plutonium rods', 'chuck some sulphuric acid in the engine', 'Ignore it, it’ll fix itself']
-const end = [' and bob’s your uncle.', ', That’ll keep the leprechauns away.',', that’ll be £4000.', ' and your hairdryer will work fine.', ' or it’ll explode within the hour.', ' and youll be back on the road in no time.']
+const end = [' and bob’s your uncle.', ', That’ll keep the leprechauns away.',', that’ll be £4000.', ' and your hairdryer will work fine.', ' or it’ll explode within the hour.', ' and youll be back on the road in no time.', 'and youre all set.']
 
 
 
