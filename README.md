@@ -1,2 +1,2 @@
 # Random-adivce-generator
-A random message generating project
+A random message generating project.
