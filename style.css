@@ -85,6 +85,7 @@ button:active{
     -webkit-background-clip: text;
     color: transparent;  
     transition: opacity .3s;
+    text-align: center;
 }
 
 .ani{
