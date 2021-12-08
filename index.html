@@ -1,0 +1,67 @@
+<html>
+    <script class='advice'>
+        const intro =['What you need, right, is to ', 'See, Here’s your problem, you need to ', 'My sister’s cousin said to ', 'The boss say’s ', 'Never listen to the manual, if you’ve got a problem just '];
+        const middle = ['stick a spanner in it', 'grease up the whirly bits','divert power to the warp core', 'take the plug out and put it back in again', 'replace the plutonium rods', 'chuck some sulphuric acid in the engine', 'ignore it, it’ll fix itself', '']
+        const end = [' and bob’s your uncle', ', That’ll keep the leprechauns away',', that’ll be £4000', ' and your hairdryer will work fine', ' or it’ll explode within the hour', ' and youll be back on the road in no time', ' and youre all set']
+        
+        function fading(){
+                document.getElementById('quote').className = ""
+          
+        }        
+
+        function phraseSelect(){
+            const dodgyAdvice = []
+            let firstP = intro[Math.floor(Math.random()*intro.length)];
+            let secondP = middle[Math.floor(Math.random()*middle.length)];
+            let thirdP = end[Math.floor(Math.random()*end.length)];
+
+            dodgyAdvice.push(firstP);
+            dodgyAdvice.push(secondP);
+            dodgyAdvice.push(thirdP);
+            
+            if(thirdP && secondP && firstP){
+                document.getElementById('quote').innerHTML = "'" + dodgyAdvice.join("") + "'"
+          
+                return dodgyAdvice
+            }else{
+                phraseSelect()
+            }
+        } 
+
+
+    </script>
+
+    <header>
+        <title>Dodgy Mechanic</title>  
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <meta charset="UTF8">
+    </header>
+
+    <body id='body'>
+
+        <div id='mainBox' >
+            <h1 id='title' class="ani">The Dodgy Mechanic Advice Generator</h1>
+            <p id='about' class="ani">
+                The dodgy mechanic advice generator is a script that creates randomized
+                mechanical advice based off of three sentence segments:<br> </p>
+                <div id='list' class="ani">
+                    <ul>
+                        <li>Intro (Identifying the mechanical problem)</li>
+                        <li>Middle (Recommended solution)</li>
+                        <li>End (Conclusion)</li>
+                    </ul>
+                </div>
+
+                <p class="ani">Click the button and the dodgy mechanic will solve your problem!</p>
+                
+                <p><Button id="b" onclick="phraseSelect()" onclick='fading()' type="button" class="ani">Problem with your motor? Click me!</Button></p>
+                
+                <img src='./pngegg.png' id='img' class="ani">
+
+                <p id="quote" class='ani'>...</p>
+        
+        </div>
+
+    </body>
+
+</html>

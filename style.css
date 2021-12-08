@@ -1,0 +1,100 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;    
+    display:flexbox;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mainBox{
+    display: flexbox;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+h1{
+    padding-top:10px;
+    background: linear-gradient(90deg, rgb(234, 29, 29), rgb(33, 134, 222));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+img{
+    width: 45em;
+    height: 40em;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold; 
+    margin: 20 auto;
+    width:740px;
+}
+
+button{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.271);
+    margin-bottom: 30px;
+
+    padding: 15px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgb(234, 29, 29), rgb(33, 134, 222));;
+    color: white;
+    border:none;
+    font-weight: bold;
+    text-indent: 7px;
+}
+
+button:hover{
+    filter: drop-shadow(4px 4px 1px rgba(78, 78, 78, 0.819));
+    transition: filter 0.4s, margin-right 0.3s, margin-left 0.1s;
+    margin-right: 6px;
+}
+
+button:active{
+    color: black;
+    margin-left: 2px;
+    animation: fadeAndScale .3s ease-in;
+}
+
+.refreshers:active{
+    animation: fadeAndScale .3s ease-in;
+
+}
+
+#list{
+    background: ;
+    width: 400px;
+    margin: 2 auto;
+    text-align: left;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    list-style-position:inside; 
+    background: linear-gradient(90deg, rgb(234, 29, 29), rgb(33, 134, 222));;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.271);
+}
+
+#quote{
+    padding: 20px;
+    display: flexbox;
+    margin: 0 auto;
+    font-size: 26px;
+    font-style: italic;
+    margin: 10px;
+    background: linear-gradient(90deg, rgb(234, 29, 29), rgb(33, 134, 222));
+    -webkit-background-clip: text;
+    color: transparent;  
+    transition: opacity .3s;
+}
+
+.ani{
+    animation: fade 0.8s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+    }to{
+        opacity:1;
+    }
+}
